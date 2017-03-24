@@ -11,7 +11,6 @@
  }
  
  body {
-     background: #eaede3
  }
  
  .view-container {
@@ -19,7 +18,6 @@
      flex-flow: column;
      width: 100vw;
      min-height: 100vh;
-     background: #eaede3;
      color: #eaede3;
      font-size: 14px
  }
@@ -40,10 +38,10 @@
  .view-container .view-inner {
      -ms-flex-flow: row nowrap;
      flex-flow: row;
-     background: #673AB7;
+     background: rgba(0, 0, 0, 0.5);
      width: calc(100vw - 24px);
      height: calc(100vh - 24px);
-     border: 1px solid #eaede3;
+     border: 1px solid rgba(0, 0, 0, 0.4);
      padding: 12px
  }
  
@@ -62,4 +60,6 @@
  
  canvas {
      display: block;
+     position: absolute;
+     z-index: -1000
  }
